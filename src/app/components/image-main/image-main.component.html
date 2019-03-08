@@ -1,0 +1,20 @@
+<div class="main-container">
+  <div class="pagin-container">
+    <button class="mybtn" (click)="setPrevPage()"><</button>
+    <p class="page-number">{{page}}</p>
+    <button class="mybtn" (click)="setNextPage()">></button>
+  </div>
+  <div
+    *ngFor="let image of images"
+    class="image-container"
+    [ngClass]="{ 'image-container_border': image.favourite }"
+    (click)="changeImageFavourite(image)"
+  >
+    <app-image-comp [image]="image" (imageChange)="changeImageFavourite($event)"></app-image-comp>
+  </div>
+  <div class="pagin-container">
+    <button class="mybtn" (click)="setPrevPage()"><</button>
+    <p class="page-number">{{page}}</p>
+    <button class="mybtn" (click)="setNextPage()">></button>
+  </div>
+</div>

@@ -1,16 +1,10 @@
-// This file can be replaced during build by using the `fileReplacements` array.
-// `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
-// The list of file replacements can be found in `angular.json`.
-
-export const environment = {
-  production: false
+const unsplash = {
+  getImages: 'https://api.unsplash.com/photos',
+  
 };
 
-/*
- * For easier debugging in development mode, you can import the following file
- * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
- *
- * This import should be commented out in production mode because it will have a negative impact
- * on performance if an error is thrown.
- */
-// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+export const environment = {
+  production: false,
+  unsplash: unsplash,
+  CLIEN_ID: 'dcd38d49c37fc26de6c9defafd4e04f87ce11115a88ee7a0a9b4bf8b5ce8f6e1'
+};
