@@ -1,6 +1,5 @@
 const unsplash = {
   getImages: 'https://api.unsplash.com/photos',
-  
 };
 
 export const environment = {
